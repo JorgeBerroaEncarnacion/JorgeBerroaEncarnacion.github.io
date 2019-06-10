@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+
+<style type="text/css">
+
+<script src="https://cdn.auth0.com/js/auth0/9.10/auth0.min.js"></script>
+ 
+	.buttonSearch
+	{
+		background-color: skyblue;
+
+	}
+
+.buttonSignUp
+{
+background-color: yellow;
+text-align: right;
+
+}
+
+.buttonSignIn
+{
+  background-color: blue;
+text-align: right;
+}
+
+	.buttonPost
+	{
+		background-color: green;
+		text-align: right;
+		padding-right: 20px;
+		margin-left:50%;
+
+	}
+
+	table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+   background-color: #dddddd;
+}
+
+td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+   background-color: white;
+}
+
+tr:nth-child(even) {
+  background-color:#dddddd;
+  
+}
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+.modal .modal-footer {
+        background: #ecf0f1;
+        border-radius: 0 0 3px 3px;
+    }
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+</style>
+<title>Bootstrap</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<div class="w3-container">
+<body>
+<div class="top">
+  
+  <input type="text" placeholder="Search..">
+  <button type="button" class="buttonSearch">Search</button>
+ <button type="button" class="buttonPost">Post a job</button>
+  <button type="button" id="SignUp" data-toggle="modal" class="buttonSignUp">Sign Up</button>
+   <button type="button" id="SingIn" data-toggle="modal" class="buttonSignIn">Sign In</button>
+</div>
+
+
+<div>
+<hr> <h1 style="align-content:center;" >Design</h1> </hr>
+</div>
+
+
+
+<table>
+  <tr>
+    <th>Location</th>
+    <th>Position</th>
+    <th>Company</th>
+  </tr>
+  <tr>
+    <td>Santo Domingo</td>
+    <td>Web designer</td>
+    <td>MercaSID</td>
+  </tr>
+<tr>
+	<td>
+ <div class="pagination">
+  <a href="#">&laquo;</a>
+  <a href="#">1</a>
+  <a href="#">2</a>
+  <a href="#">3</a>
+  <a href="#">4</a>
+  <a href="#">5</a>
+  <a href="#">6</a>
+  <a href="#">&raquo;</a>
+</div>
+</tr>
+</td>
+  </table>
+
+<div>
+<hr> <h1 style="align-content:center;" >Programming</h1> </hr>
+</div>
+
+<table>
+  <tr>
+    <th>Location</th>
+    <th>Position</th>
+    <th>Company</th>
+  </tr>
+  <tr>
+    <td>Santo Domingo</td>
+    <td>Web designer</td>
+    <td>Claro RD</td>
+  </tr>
+   <tr>
+    <td>Santiago</td>
+    <td>Tester</td>
+    <td>Intellisys inc.</td>
+  </tr>
+   <tr>
+    <td>La romana </td>
+    <td>Android Developer</td>
+    <td>Casa de campo</td>
+  </tr>
+   <tr>
+    <td>Punta Cana </td>
+    <td>QA Engineer</td>
+    <td style="background-color: red;">confidencial</td>
+  </tr>
+<tr>
+	<td>
+ <div class="pagination">
+  <a href="#">&laquo;</a>
+  <a href="#">1</a>
+  <a href="#">2</a>
+  <a href="#">3</a>
+  <a href="#">4</a>
+  <a href="#">5</a>
+  <a href="#">6</a>
+  <a href="#">&raquo;</a>
+</div>
+</tr>
+</td>
+  </table>
+</div>	
+
+
+
+
+
+</body>
