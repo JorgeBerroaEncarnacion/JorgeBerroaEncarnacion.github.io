@@ -11,7 +11,7 @@ window.addEventListener('load', function() {
     redirectUri: window.location.href
   });
 
-  var loginBtn = document.getElementById('SignUp');
+  var loginBtn = document.getElementById('btn-login');
 
   loginBtn.addEventListener('click', function(e) {
     e.preventDefault();
