@@ -5,7 +5,7 @@ window.addEventListener('load', function() {
 
   var webAuth = new auth0.WebAuth({
     domain: 'dev-mk9usb78.auth0.com',
-    clientID: 'a0VnvPN8KUI5cxtAOCiQMSa2a4a60HAo',
+    clientID: '94qz0J97emC2lBNQNJ1TPWEPVV6qUyn7',
     responseType: 'token id_token',
     scope: 'openid',
     redirectUri: window.location.href
